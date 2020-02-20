@@ -62,6 +62,30 @@
     <Compile Include="VIewModel\CashVM.cs" />
     <Compile Include="VIewModel\ProjectVM.cs" />
     <Compile Include="VIewModel\ScrumVM.cs" />
+    <Compile Include="View\Cash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Cash.Designer.cs">
+      <DependentUpon>Cash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Minipages\AddOp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Minipages\AddOp.Designer.cs">
+      <DependentUpon>AddOp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Projects.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Projects.Designer.cs">
+      <DependentUpon>Projects.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Scrum.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Scrum.Designer.cs">
+      <DependentUpon>Scrum.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -74,6 +98,15 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="View\Cash.resx">
+      <DependentUpon>Cash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Minipages\AddOp.resx">
+      <DependentUpon>AddOp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Projects.resx">
+      <DependentUpon>Projects.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -87,8 +120,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="View\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
